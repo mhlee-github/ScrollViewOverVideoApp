@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10EDCAAFAEC3443C4C9E1692 /* Pods_ScrollViewOverVideoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0E58CF60806E91C040EB4E /* Pods_ScrollViewOverVideoApp.framework */; };
 		821482D8209BE23600098996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821482D7209BE23600098996 /* AppDelegate.swift */; };
 		821482DA209BE23600098996 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821482D9209BE23600098996 /* ViewController.swift */; };
 		821482DD209BE23600098996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821482DB209BE23600098996 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14B9585F11F1F0DFDC7230FD /* Pods-ScrollViewOverVideoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewOverVideoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewOverVideoApp/Pods-ScrollViewOverVideoApp.release.xcconfig"; sourceTree = "<group>"; };
+		6664D9D1CAD86ED9A348A9D9 /* Pods-ScrollViewOverVideoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrollViewOverVideoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScrollViewOverVideoApp/Pods-ScrollViewOverVideoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		821482D4209BE23600098996 /* ScrollViewOverVideoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollViewOverVideoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		821482D7209BE23600098996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		821482D9209BE23600098996 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		821482DE209BE23800098996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		821482E1209BE23800098996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		821482E3209BE23800098996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F0E58CF60806E91C040EB4E /* Pods_ScrollViewOverVideoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrollViewOverVideoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10EDCAAFAEC3443C4C9E1692 /* Pods_ScrollViewOverVideoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				821482D6209BE23600098996 /* ScrollViewOverVideoApp */,
 				821482D5209BE23600098996 /* Products */,
+				883001D252AAA5C2DBCDB121 /* Pods */,
+				B2A3D4A7987A9E732E285D31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ScrollViewOverVideoApp;
 			sourceTree = "<group>";
 		};
+		883001D252AAA5C2DBCDB121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6664D9D1CAD86ED9A348A9D9 /* Pods-ScrollViewOverVideoApp.debug.xcconfig */,
+				14B9585F11F1F0DFDC7230FD /* Pods-ScrollViewOverVideoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2A3D4A7987A9E732E285D31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F0E58CF60806E91C040EB4E /* Pods_ScrollViewOverVideoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 821482E6209BE23800098996 /* Build configuration list for PBXNativeTarget "ScrollViewOverVideoApp" */;
 			buildPhases = (
+				DCE28768AE52A306A0733634 /* [CP] Check Pods Manifest.lock */,
 				821482D0209BE23600098996 /* Sources */,
 				821482D1209BE23600098996 /* Frameworks */,
 				821482D2209BE23600098996 /* Resources */,
+				6D659A2A4DB3EFFE0325E24E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D659A2A4DB3EFFE0325E24E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewOverVideoApp/Pods-ScrollViewOverVideoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BMPlayer/BMPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BMPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScrollViewOverVideoApp/Pods-ScrollViewOverVideoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCE28768AE52A306A0733634 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrollViewOverVideoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		821482D0209BE23600098996 /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		821482E7209BE23800098996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6664D9D1CAD86ED9A348A9D9 /* Pods-ScrollViewOverVideoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +366,7 @@
 		};
 		821482E8209BE23800098996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B9585F11F1F0DFDC7230FD /* Pods-ScrollViewOverVideoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
